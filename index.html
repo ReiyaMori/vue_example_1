@@ -8,6 +8,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <p>{{message}}</p>
+        <input v-model="message" v-on>
+        <button v-on:click="button">
+            ここをクリック
+        </button>
+        <a v-bind:href="url">Google</a>
+        <ul>
+            <li v-for="la in languages">{{la}}</li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
